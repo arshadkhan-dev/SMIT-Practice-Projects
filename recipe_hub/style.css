@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  background-color: #e0f2fe;
+}
+nav {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid yellow;
+  background-color: #c2185b;
+  color: #e0f2fe;
+}
+
+.links > ul {
+  display: flex;
+  gap: 15px;
+  padding-right: 20px;
+  list-style: none;
+}
+
+.heading > h2 {
+  padding-left: 20px;
+}
+
+.links > ul > li > a {
+  text-decoration: none;
+  color: #e0f2fe;
+}
+
+.links > ul > li > a:hover {
+  color: #c2185b;
+  background-color: #e0f2fe;
+  border-radius: 5px;
+}
+
+/* Hero section */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  height: 20rem;
+  margin-top: 2rem;
+}
+
+.col-1 {
+  height: 25rem;
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  color: #c2185b;
+}
+.hero-image {
+  width: 60%;
+  height: 25rem;
+  box-sizing: border-box;
+}
+.hero-image > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.recipe-btn:hover {
+  background-color: #86405c;
+}
+
+.buttons {
+  margin-top: 7rem;
+  padding: 0 20px;
+}
+
+.buttons > button {
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+  height: 2rem;
+  color: #e0f2fe;
+  background-color: #c2185b;
+}
+
+.recipe-btn {
+  width: 10rem;
+  height: 3rem;
+}
+
+.btn:hover {
+  background-color: #763650;
+}
+
+.grid-heading {
+  margin: 30px 20px;
+  color: #c2185b;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 20px;
+  gap: 10px;
+  color: #c2185b;
+}
+
+.grid-items {
+  border: 1px solid #c2185b;
+  height: 22rem;
+  border-radius: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.grid-items > img {
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
+  border-bottom: 2px solid;
+  margin-bottom: 15px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.review {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 30px 20px;
+  color: #c2185b;
+  margin: 2rem 0;
+}
+
+.row {
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.row > p {
+  margin-top: 5px;
+  color: #995570;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0;
+}
+
+.col {
+  height: 5rem;
+  text-align: center;
+}
+
+.col > h3 {
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+.col > ul > li {
+  color: #995570;
+  list-style: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #c2185b;
+  color: #e0f2fe;
+  border-top: 1px solid yellow;
+}
+
+/* medai query for navbar */
+
+@media (max-width: 520px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 37rem;
+  }
+
+  .col-1 {
+    display: flex;
+    gap: 20px;
+    width: 85%;
+    height: 15rem;
+  }
+
+  .hero-image {
+    width: 85%;
+  }
+
+  .hero-image > img {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+
+  .buttons > button {
+    margin: 5px 0;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .grid-container > div {
+    height: 100%;
+    width: 100%;
+  }
+  .contact-details {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: start;
+    gap: 10px;
+  }
+  .col {
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+}
