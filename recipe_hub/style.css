@@ -24,6 +24,7 @@ nav {
   gap: 15px;
   padding-right: 20px;
   list-style: none;
+  font-size: 18px;
 }
 
 .heading > h2 {
@@ -66,12 +67,8 @@ nav {
 }
 .hero-image > img {
   height: 100%;
-  width: 100%;
+  width: 95%;
   border-radius: 10px;
-}
-
-.recipe-btn:hover {
-  background-color: #86405c;
 }
 
 .buttons {
@@ -90,6 +87,8 @@ nav {
   height: 2rem;
   color: #e0f2fe;
   background-color: #c2185b;
+  box-shadow: -3px 3px 5px black;
+  transition: transform 1s ease-in-out;
 }
 
 .recipe-btn {
@@ -98,7 +97,7 @@ nav {
 }
 
 .btn:hover {
-  background-color: #763650;
+  transform: scaleY(1.1);
 }
 
 .grid-heading {
@@ -120,6 +119,12 @@ nav {
   border-radius: 10px;
   padding: 5px;
   box-sizing: border-box;
+  transition: all 0.5s linear;
+}
+
+.grid-items:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .grid-items > img {
@@ -178,6 +183,8 @@ nav {
   list-style: none;
 }
 
+/* footer */
+
 footer {
   text-align: center;
   padding: 2rem 0;
@@ -185,8 +192,6 @@ footer {
   color: #e0f2fe;
   border-top: 1px solid yellow;
 }
-
-/* medai query for navbar */
 
 @media (max-width: 520px) {
   nav {
