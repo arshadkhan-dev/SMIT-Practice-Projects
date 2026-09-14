@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>AFRIDI Chai Stall</h1>
+        <p>
+          A small JavaScript practice web page. place a chai order using prompts
+          and pop-ups. Taste the tea and enjoy your day.
+        </p>
+        <button onclick="startOrder()">Start Order</button>
+      </div>
+
+      <div class="order-container">
+        <div class="order-card" id="reciept">
+          <h2 class="order-heading">Order Receipt</h2>
+          <div class="col">
+            <span class="first-span">Name</span>
+            <span class="second-span" id="o-name"></span>
+          </div>
+
+          <div class="col">
+            <span class="first-span">Flover</span>
+            <span class="second-span" id="o-flover"></span>
+          </div>
+
+          <div class="col">
+            <span class="first-span">Size</span>
+            <span class="second-span" id="o-size"></span>
+          </div>
+
+          <div class="col">
+            <span class="first-span">Cups</span>
+            <span class="second-span" id="o-cups"></span>
+          </div>
+
+          <div class="col fifth-box">
+            <span class="first-span">Suger</span>
+            <span class="second-span" id="o-suger"></span>
+          </div>
+
+          <div class="col total-box">
+            <span class="first-span">Total</span>
+            <span class="second-span" id="o-total"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
