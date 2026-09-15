@@ -1,4 +1,4 @@
-alert("Welcome to Afridi Chai Stall!, let's take your order.");
+alert("Welcome to Peshawar Chai Stall!, let's take your order.");
 let customer_name = prompt("What's your name?");
 if (!customer_name) {
   customer_name = "Guest";
