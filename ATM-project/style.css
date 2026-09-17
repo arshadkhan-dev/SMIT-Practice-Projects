@@ -36,7 +36,7 @@ button {
   border: none;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .container {
     width: 15rem;
     height: 16rem;
