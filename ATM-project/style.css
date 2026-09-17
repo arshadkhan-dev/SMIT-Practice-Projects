@@ -35,3 +35,10 @@ button {
   border-radius: 0.5rem;
   border: none;
 }
+
+@media (max-width: 425px) {
+  .container {
+    width: 15rem;
+    height: 16rem;
+  }
+}
