@@ -58,7 +58,12 @@ a:hover {
   justify-content: space-between;
   border: 1px solid aqua;
   border-radius: 5px;
-  box-sizing: border-box;
+}
+
+@media (max-width: 430px) {
+  .animate-box {
+    height: 25rem;
+  }
 }
 
 .fa-bolt,
