@@ -60,12 +60,6 @@ a:hover {
   border-radius: 5px;
 }
 
-@media (max-width: 430px) {
-  .animate-box {
-    height: 25rem;
-  }
-}
-
 .fa-bolt,
 .fa-star,
 .fa-desktop {
@@ -123,4 +117,10 @@ input {
 
 p {
   color: rgb(142, 177, 177);
+}
+
+@media (max-width: 430px) {
+  .animate-box {
+    height: 25rem;
+  }
 }
