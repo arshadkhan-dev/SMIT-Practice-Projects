@@ -10,11 +10,18 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- nav-section -->
-    <div class="nav-section top-fixed">
+    <div class="nav-section">
       <div class="container py-4">
         <div class="row">
           <div
@@ -23,7 +30,7 @@
             <h1>NO<span style="color: aqua">VA</span></h1>
           </div>
           <div class="col-lg-4 col-md-12 text-md-center">
-            <ul class="my-2.5">
+            <ul class="my-3">
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#skill">Skills</a></li>
@@ -41,7 +48,7 @@
 
     <!-- Main tag -->
     <main>
-      <section class="hero-section py-5">
+      <section class="hero-section py-5 mt-5">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12">
@@ -56,10 +63,20 @@
                 <br />
                 effortless to use.
               </p>
-              <button class="btn btn1 mt-3">View Projects</button>
+              <button class="btn btn1 mt-3">
+                <a href="#project">
+                  View Projects
+
+                  <i
+                    class="fa-solid fa-arrow-right"
+                    style="margin-left: 0.5rem"
+                  ></i>
+                </a>
+              </button>
               <button
-                class="btn btn1 border mt-3"
+                class="btn btn1 mt-3"
                 style="background-color: inherit; color: white"
+                ;
               >
                 Explore Services
               </button>
@@ -68,10 +85,37 @@
               <div class="card">
                 <div class="card-body animate-box">
                   <div class="upper-box">
-                    <p>DIGITAL</p>
+                    <p><span>DIGITAL</span></p>
                     <h2>EXPERIENCE</h2>
+                    <div class="row mt-4">
+                      <div class="col-4">
+                        <i
+                          class="fa-solid fa-bolt"
+                          style="font-size: 2rem; margin-left: 2rem"
+                        ></i>
+                        <h3>Creative</h3>
+                        <p>Unique ideas that bring brands to life.</p>
+                      </div>
+                      <div class="col-4">
+                        <i
+                          class="fa-solid fa-desktop"
+                          style="font-size: 1.7rem; margin-left: 2.5rem"
+                        ></i>
+                        <h3>Responsive</h3>
+                        <p>Looks great on every device.</p>
+                      </div>
+                      <div class="col-4">
+                        <i
+                          class="fa-solid fa-star"
+                          style="font-size: 2rem; margin-left: 1.5rem"
+                        ></i>
+                        <h3>Modern</h3>
+                        <p>Built for today, ready for tomorroow.</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="lower-box mt-5">
+                  <hr />
+                  <div class="lower-box">
                     <p>Creative. Responsive. Modern</p>
                   </div>
                 </div>
@@ -81,7 +125,7 @@
         </div>
       </section>
 
-      <section class="dashboard">
+      <section class="dashboard mt-5">
         <div class="container-fluid">
           <div class="row text-center">
             <div class="col-lg-3 col-6 border">
@@ -272,28 +316,36 @@
           <div class="row py-4">
             <div class="col-lg-4 col-12 mt-lg-0 mt-2">
               <div class="card">
-                <div class="card-body">
-                  <img
-                    src="./images/boxing.jpg"
-                    alt="My project"
-                    style="width: 100%; height: 15rem; border-radius: 5px"
-                  />
-                  <h3 class="mt-4">Iron-Peak-Fitness</h3>
-                  <p>Analytics. UI Design</p>
-                </div>
+                <a
+                  href="https://arshadkhan-dev.github.io/SMIT-Practice-Projects/iron-peak-fitness"
+                >
+                  <div class="card-body">
+                    <img
+                      src="./images/boxing.jpg"
+                      alt="My project"
+                      style="width: 100%; height: 15rem; border-radius: 5px"
+                    />
+                    <h3 class="mt-4">Iron-Peak-Fitness</h3>
+                    <p>Analytics. UI Design</p>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-12 mt-lg-0 mt-2">
               <div class="card">
-                <div class="card-body">
-                  <img
-                    src="./images/recipe1.webp"
-                    alt="My project"
-                    style="width: 100%; height: 15rem; border-radius: 5px"
-                  />
-                  <h3 class="mt-4">Recipe Hub</h3>
-                  <p>Analytics. UI Design</p>
-                </div>
+                <a
+                  href="https://arshadkhan-dev.github.io/SMIT-Practice-Projects/recipe_hub"
+                >
+                  <div class="card-body">
+                    <img
+                      src="./images/recipe1.webp"
+                      alt="My project"
+                      style="width: 100%; height: 15rem; border-radius: 5px"
+                    />
+                    <h3 class="mt-4">Recipe Hub</h3>
+                    <p>Analytics. UI Design</p>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-12 mt-lg-0 mt-2">
@@ -347,9 +399,17 @@
             <div class="col-lg-3 col-6">
               <ul class="links">
                 <li><span>EXPLORE</span></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skill">Skills</a></li>
+                <li>
+                  <a href="#about" style="color: rgb(142 177 177)">About</a>
+                </li>
+                <li>
+                  <a href="#services" style="color: rgb(142 177 177)"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#skill" style="color: rgb(142 177 177)">Skills</a>
+                </li>
               </ul>
             </div>
             <div class="col-lg-3 col-6">

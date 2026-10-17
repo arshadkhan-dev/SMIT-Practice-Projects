@@ -8,8 +8,8 @@ body {
 }
 
 .nav-section {
-  height: 7rem;
-  border-bottom: 1px solid gray;
+  height: 7.5rem;
+  border-bottom: 1px solid gainsboro;
 }
 
 ul {
@@ -32,18 +32,23 @@ a:hover {
 }
 
 .btn1 {
-  border: none;
   background-color: aqua;
+  border: 1px solid aqua;
 }
 
 .btn1 a {
   color: black;
+  transition: 1s;
 }
 
 .btn1:hover {
   background-color: rgb(31, 111, 111);
-  color: black;
+  color: white;
   transition: 1s;
+}
+
+.btn > a:hover {
+  color: white;
 }
 
 .animate-box {
@@ -51,6 +56,9 @@ a:hover {
   flex-direction: column;
   height: 21rem;
   justify-content: space-between;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .services-box {
@@ -96,4 +104,9 @@ input {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  color: rgb(142, 177, 177);
+}
+
+p {
+  color: rgb(142, 177, 177);
 }
