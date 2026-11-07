@@ -42,16 +42,15 @@ addTask.addEventListener("click", function () {
 
   deleteBtn.addEventListener("click", function (event) {
     if (li.classList.contains("completed")) {
+      completedTaskCount--;
+    } else {
       if (todoTaskCount > 0) {
         todoTaskCount--;
-      }
-    } else {
-      if (completedTaskCount > 0) {
-        completedTaskCount--;
       }
     }
 
     totalTaskCount--;
+    completedTaskCount--;
     li.remove();
 
     totalTasks.textContent = `${totalTaskCount}`;
