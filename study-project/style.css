@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(190, 184, 231);
+}
+
+p {
+  color: rgb(26, 24, 24);
+}
+
+.navbar {
+  background-color: rgb(245, 241, 241);
+  border-bottom: 1px solid blueviolet;
+}
+
+.hero-section {
+  margin-top: 100px;
+}
+
+.btn {
+  background-color: blueviolet;
+  color: white;
+}
+
+.btn:hover {
+  border: 1px solid blueviolet;
+  color: blueviolet;
+}
+
+input {
+  background-color: inherit;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 7px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: rgb(245, 241, 241);
+}
+
+.card:hover {
+  box-shadow: 8px 15px 11px 0px rgba(0, 0, 0, 0.1);
+}
+
+.task input {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.styleTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.decoration {
+  text-decoration: line-through;
+}

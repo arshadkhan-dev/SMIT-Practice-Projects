@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Project</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+          <div class="logo">
+            <button
+              class="btn"
+              style="color: white; background-color: blueviolet"
+            >
+              <b>S</b>
+            </button>
+            <span><b>StudySprint</b></span>
+          </div>
+          <p class="d-none d-sm-block">Plan your day, Make progress</p>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-sm-6 col-12">
+              <strong style="font-size: 12px; color: rgb(90, 12, 162)"
+                >YOUR PERSONEL STUDY PLANNER</strong
+              >
+              <h1>Small Steps.</h1>
+              <h1>
+                <span style="color: rgb(90, 12, 162)">Big Progress.</span>
+              </h1>
+              <p>
+                A simple space to organize your study tasks, focus on what
+                <br />
+                matters, and celebrate every little win.
+              </p>
+              <button class="btn">Start Planning</button>
+              <button
+                class="btn task-btn mt-2 mt-sm-0 mt-md-0 mt-lg-0"
+                style="
+                  background-color: rgba(240, 248, 255, 0.913);
+                  color: black;
+                "
+              >
+                Add a Sample Task
+              </button>
+            </div>
+            <div class="col col-sm-6 col-12 mt-3 mt-sm-0">
+              <div
+                class="card p-4"
+                style="
+                  background-color: rgb(87, 17, 154);
+                  color: white;
+                  height: 16rem;
+                "
+              >
+                <span class="p-2">THIS WEEK MINDSET</span>
+                <h2 class="p-2">Progress over perfection.</h2>
+                <span class="p-2"
+                  >Every task you finish is one step closer to your goal.</span
+                >
+                <input type="range" value="80" class="p-2" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="task-details mt-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-3.5 card m-2">
+              <h2 id="totalTasks">0</h2>
+              <p>Total tasks</p>
+            </div>
+            <div class="col col-3.5 card m-2">
+              <h2 id="completedTasks">0</h2>
+              <p>Completed</p>
+            </div>
+            <div class="col col-3.5 card m-2">
+              <h2 id="remainingTasks">0</h2>
+              <p>Still to do</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tasks">
+        <div class="container-fluid">
+          <div class="card p-3">
+            <div class="row">
+              <div class="col">
+                <strong style="color: rgb(89, 15, 158); font-size: 12px"
+                  >MY WORKSPACE</strong
+                >
+                <h2 class="mt-2">Today's tasks</h2>
+                <p class="mt-2">Add a task, and keep moving.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-8">
+                <input
+                  class="mt-2"
+                  id="inputField"
+                  type="text"
+                  placeholder="Enter Task"
+                />
+              </div>
+              <div class="col-sm-12 col-md-4 mt-3 mt-md-0">
+                <button class="btn" id="addTask">Add Task</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="btn mt-3" id="allTasks"><b>All tasks</b></button>
+                <button class="btn mt-3" id="tasksTodo"><b>Todo</b></button>
+                <button class="btn mt-3" id="completed">
+                  <b>Completed</b>
+                </button>
+              </div>
+            </div>
+
+            <div class="container-fluid mt-4">
+              <ul id="list" class="row"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-fluid py-2">
+        <div class="row">
+          <div class="col col-12">
+            <p style="text-align: center">
+              Made for learning . StudySprint @copy 2026
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
