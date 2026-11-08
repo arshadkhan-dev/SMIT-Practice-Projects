@@ -50,7 +50,7 @@ addTask.addEventListener("click", function () {
     }
 
     totalTaskCount--;
-    completedTaskCount--;
+
     li.remove();
 
     totalTasks.textContent = `${totalTaskCount}`;
@@ -60,7 +60,9 @@ addTask.addEventListener("click", function () {
 
   completeBtn.addEventListener("click", function () {
     if (!li.classList.contains("completed")) {
+      li.classList.add("completed");
       span.style.textDecoration = "line-through";
+      completeBtn.disabled = true;
       completedTaskCount++;
       todoTaskCount--;
     } else {
